@@ -1,0 +1,14 @@
+{
+  "name": "vertect.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/style.css",
+    "build-ci": "npm run build && rm -rf dist && cp -rf src dist && rm dist/input.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
